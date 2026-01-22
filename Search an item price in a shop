@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int price[5]={10,20,30,40,50}, key, i, found=0;
+    printf("Enter price to search: ");
+    scanf("%d",&key);
+
+    for(i=0;i<5;i++){
+        if(price[i]==key){
+            found=1;
+            break;
+        }
+    }
+    if(found)
+        printf("Item Found");
+    else
+        printf("Item Not Found");
+    return 0;
+}
