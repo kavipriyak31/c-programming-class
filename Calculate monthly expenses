@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int exp[4], i, total=0;
+    printf("Enter expenses:\n");
+    for(i=0;i<4;i++){
+        scanf("%d",&exp[i]);
+        total+=exp[i];
+    }
+    printf("Total Expenses = %d",total);
+    return 0;
+}
