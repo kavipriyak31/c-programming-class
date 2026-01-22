@@ -1,0 +1,15 @@
+int login(char u[], char p[]) {
+    return strcmp(u, "admin") == 0 && strcmp(p, "123") == 0;
+}
+
+int main() {
+    char u[20], p[20];
+    scanf("%s %s", u, p);
+
+    if (login(u, p))
+        printf("Login Successful");
+    else
+        printf("Login Failed");
+
+    return 0;
+}V
