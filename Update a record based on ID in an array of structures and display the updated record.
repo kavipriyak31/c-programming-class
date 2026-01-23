@@ -1,0 +1,12 @@
+#include <stdio.h>
+struct student {
+    int id;
+    int mark;
+};
+
+int main() {
+    struct student s={1,50};
+    s.mark = 80;
+    printf("ID:%d Mark:%d",s.id,s.mark);
+    return 0;
+}
