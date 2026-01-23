@@ -1,0 +1,18 @@
+include <stdio.h>
+struct customer {
+    int id;
+    char name[20];
+    long mobile;
+};
+
+int main() {
+    struct customer c[2] = {{1,"Ravi",98765},{2,"Kavi",87654}};
+    int id, i;
+    printf("Enter ID: ");
+    scanf("%d",&id);
+
+    for(i=0;i<2;i++)
+        if(c[i].id==id)
+            printf("%s %ld",c[i].name,c[i].mobile);
+    return 0;
+}
