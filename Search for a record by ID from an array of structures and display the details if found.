@@ -1,0 +1,17 @@
+#include <stdio.h>
+struct item {
+    int id;
+    char name[10];
+};
+
+int main() {
+    struct item i[2]={{1,"Pen"},{2,"Book"}};
+    int id;
+    scanf("%d",&id);
+
+    if(i[0].id==id)
+        printf("%s",i[0].name);
+    else
+        printf("%s",i[1].name);
+    return 0;
+}
